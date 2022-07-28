@@ -1,13 +1,15 @@
 @font-face { font-family: 'Norse Bold'; src: url('Norse-Bold.otf'); } 
 
 body{
+    font-family: Arial;
     display:flex;
     flex-direction: row;
     padding:0;
     margin:0;
-    background-color: #FBFCFC;
+    background-color: #f9fafb;
 }
 .image{
+    position: relative;
     height:100vh;
     width:auto; 
     background-size: cover;
@@ -33,4 +35,52 @@ h1{
 .logoimg{
     height:8em;
     object-fit: contain;
+}
+
+.column{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+.form{
+    background-color: white;
+    width: 100%;
+
+}
+.container{
+    padding: 0 0 0 2em;
+}
+button{
+    color:white;
+    background-color: #596D48;
+    border-radius: 8px;
+    padding: 0 4em;
+}
+.container > * {
+    margin: 1em 0 1em 0;
+}
+.credit{
+    position: absolute;
+    left:3em;
+    bottom: 1em;
+    color:white;
+}
+.credit a{
+    color:white
+}
+form{
+    display:grid;
+    grid-template-columns: 20em 20em;
+}
+input{
+    border-radius: 6px;
+    border:1px solid lightgray;
+    padding:.5em;
+    margin:0;
+    width:20em;
+}
+span{
+    font-family:Courier New, sans-serif;
 }
